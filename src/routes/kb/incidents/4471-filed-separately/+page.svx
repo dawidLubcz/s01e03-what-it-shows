@@ -4,7 +4,7 @@ title: '#4471 · two causes filed separately'
 owner: dawidLubcz
 status: filed
 reviewed: 2026-11-06
-signature: Dawid Zielinski
+signature: v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjkwNjYiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzkyNTU1OCwiZXhwIjoxNzk0MDExOTU4fQ.xy_fpXJ6BI6JH6jdwfAPtpmBA8iLwKQeqcQcAkQWkHE
 ---
 
 <script>
@@ -12,7 +12,8 @@ signature: Dawid Zielinski
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
-  const signature = 'Dawid Zielinski';
+  const signature =
+    'v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjkwNjYiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzkyNTU1OCwiZXhwIjoxNzk0MDExOTU4fQ.xy_fpXJ6BI6JH6jdwfAPtpmBA8iLwKQeqcQcAkQWkHE';
 </script>
 
 Ticket **#4471** merged **412** reports about wrong booking dates. The desk marked the incident

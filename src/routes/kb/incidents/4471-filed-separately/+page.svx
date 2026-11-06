@@ -16,13 +16,13 @@ signature: v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjkwNjYiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC
     'v1.eyJzdG9yeSI6Im9mZiIsInN1YiI6IjkwNjYiLCJhdWQiOiJjaGFsbGVuZ2U6d2hhdC1pdC1zaG93cyIsImlhdCI6MTc5MzkyNTU1OCwiZXhwIjoxNzk0MDExOTU4fQ.xy_fpXJ6BI6JH6jdwfAPtpmBA8iLwKQeqcQcAkQWkHE';
 </script>
 
-Ticket **#4471** merged **412** reports about wrong booking dates. The desk marked the incident
-**known** and queued one parser fix. Re-reading the export shows **two causes** in that merge —
-only one belongs on #4471.
+Ticket **#4471** merged **412** reports about wrong booking dates. The desk later closed **#4471**
+(5 Oct): **`parser` FIXED**, **`hint` WON'T FIX**. These GitHub tickets match that split.
 
 <Callout>
-GitHub tickets [parser · 379](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/1) and
-[hint · 33](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/2) are **closed** on the desk queue.
+[#1 parser · 379 reports](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/1) closed **completed**
+(fixed). [#2 hint · 33 reports](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/2) closed **not
+planned** (won't fix).
 </Callout>
 
 ## What was merged
@@ -33,8 +33,8 @@ GitHub tickets [parser · 379](https://github.com/dawidLubcz/s01e03-what-it-show
 
 | Cause | Reports | GitHub | Belongs on #4471? |
 |-------|--------:|--------|-------------------|
-| `parser` | **379** | [issue #1](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/1) | yes — month-first parser vs day-first tenants |
-| `hint` | **33** | [issue #2](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/2) | no — booking-v3 **MM/DD/YYYY** hint on day-first locales |
+| `parser` | **379** | [issue #1](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/1) · **fixed** | yes — month-first parser vs day-first tenants |
+| `hint` | **33** | [issue #2](https://github.com/dawidLubcz/s01e03-what-it-shows/issues/2) · **won't fix** | no — booking-v3 **MM/DD/YYYY** hint on day-first locales |
 
 The `hint` rows were merged into #4471 before anyone split them. They need their own fix and
 should not wait on the parser queue alone.

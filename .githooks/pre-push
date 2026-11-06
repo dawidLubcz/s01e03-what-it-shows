@@ -1,0 +1,11 @@
+#!/bin/sh
+# Ensure GitHub HTTPS operations use dawidLubcz (MEGA S01E03 private account).
+login=$(gh api user -q .login 2>/dev/null) || {
+  echo "pre-push: gh not available; cannot verify GitHub account." >&2
+  exit 1
+}
+if [ "$login" != "dawidLubcz" ]; then
+  echo "pre-push: refused — active gh account is '$login', expected 'dawidLubcz'." >&2
+  echo "Run: gh auth switch --user dawidLubcz && gh auth setup-git" >&2
+  exit 1
+fi
